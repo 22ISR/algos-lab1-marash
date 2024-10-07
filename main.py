@@ -29,9 +29,15 @@ hint: цикл, если и "%"
 a=int(input("Введите число: "))
 
 for i in range(1,a):
-  print(i)
   if i % 3 == 0:
     print("Fizz")
+  elif i % 5 == 0:
+    print("Buzz")
+  elif i % 3 and i % 5 == 0:
+    print("FizzBuzz")
+  else:
+    print(i)
+
 
 
 """
