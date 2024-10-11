@@ -26,17 +26,17 @@ hint: что такое print?
 
 hint: цикл, если и "%"
 """
-a=int(input("Введите число: "))
+#a=int(input("Введите число: "))
 
-for i in range(1,a):
-  if i % 3 == 0:
-    print("Fizz")
-  elif i % 5 == 0:
-    print("Buzz")
-  elif i % 3 and i % 5 == 0:
-    print("FizzBuzz")
-  else:
-    print(i)
+#for i in range(1,a):
+  # if i % 3 == 0 and i % 5 == 0:
+ ##   print("FizzBuzz")
+ # elif i % 3 == 0:
+ #   print("Fizz")
+ # elif i % 5 == 0:
+ #   print("Buzz")
+  #else:
+   # print(i)
 
 
 
@@ -53,10 +53,23 @@ for i in range(1,a):
 hint: https://ru.wikihow.com/%D0%B2%D1%8B%D1%81%D1%87%D0%B8%D1%82%D1%8B%D0%B2%D0%B0%D1%82%D1%8C-%D0%B2%D0%B8%D1%81%D0%BE%D0%BA%D0%BE%D1%81%D0%BD%D1%8B%D0%B5-%D0%B3%D0%BE%D0%B4%D1%8B
 """
 
-# Замените это своим кодом
 
-"""
- _____         _        ___ 
+#def is_leap_year(year):
+  #if (year % 4 == 0 and year % 100 == 0):
+        #return True
+  #else:
+        #return False
+
+#year_input = input("Введите год: ")
+#year = int(year_input)
+#if is_leap_year(year):
+        #print(f"{year} является високосным годом.")
+#else:
+        #print(f"{year} не является високосным годом.")
+
+
+
+"""____         _        ___ 
 |_   _|       | |      /   |
   | | __ _ ___| | __  / /| |
   | |/ _` / __| |/ / / /_| |
@@ -68,7 +81,19 @@ hint: https://ru.wikihow.com/%D0%B2%D1%8B%D1%81%D1%87%D0%B8%D1%82%D1%8B%D0%B2%D0
 hint: https://letpy.com/handbook/builtins/reversed/
 """
 
-# Замените это своим кодом
+
+#def is_palindrome(value):
+    # Приводим к строке и убираем пробелы и знаки препинания
+    #cleaned_value = ''.join(c.lower() for c in str(value) if c.isalnum())
+    #return cleaned_value == cleaned_value[::-1]
+
+#user_input = input("Введите строку или число: ")
+
+#if is_palindrome(user_input):
+    #print(f'"{user_input}" является палиндромом.')
+#else:
+    #print(f'"{user_input}" не является палиндромом.')
+
 
 """
  _____         _      _____ 
@@ -83,7 +108,19 @@ hint: https://letpy.com/handbook/builtins/reversed/
 hint: https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B0%D0%BB
 """
 
-# Замените это своим кодом
+
+def factorial_recursive(n):
+    if n < 0:
+        return "Факториал не определен для отрицательных чисел."
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial_recursive(n - 1)
+
+user_input = int(input("Введите число для вычисления факториала: "))
+result = factorial_recursive(user_input)
+print(f"Факториал числа {user_input} равен {result}.")
+
 
 """
  _____         _       ____ 
